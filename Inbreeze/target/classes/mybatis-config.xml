@@ -4,6 +4,6 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	 <typeAliases>
-		<typeAlias alias="review" type="com.mycompany.myapp.ReviewVO" />
+		<typeAlias alias="review" type="com.mycompany.myapp.review.ReviewVO" />
 	</typeAliases> 
 </configuration>
