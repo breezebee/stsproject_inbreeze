@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.mycompany.myapp.review;
 
 import java.util.Date;
 
@@ -11,7 +11,6 @@ public class ReviewVO {
 	private String menu;
 	private int score;
 	private Date regdate;
-	private int cnt;
 
 	public int getSeq() {
 		return seq;
@@ -75,14 +74,6 @@ public class ReviewVO {
 
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
-	}
-
-	public int getCnt() {
-		return cnt;
-	}
-
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
 	}
 
 }

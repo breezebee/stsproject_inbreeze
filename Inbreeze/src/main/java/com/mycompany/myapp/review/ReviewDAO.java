@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.mycompany.myapp.review;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,18 +14,18 @@ public class ReviewDAO {
 	@Autowired
 	SqlSession sqlSession;
 
-	public int insertBoard(ReviewVO vo) {
-		int result = sqlSession.insert("Review.insertBoard", vo);
+	public int insertReview(ReviewVO vo) {
+		int result = sqlSession.insert("Review.insertReview", vo);
 		return result;
 	}
 
-	public int deleteBoard(int seq) {
-		int result = sqlSession.delete("Review.deleteBoard",  seq);
+	public int deleteReview(int seq) {
+		int result = sqlSession.delete("Review.deleteReview",  seq);
 		return result;
 	}
 
-	public int updateBoard(ReviewVO vo) {
-		int result = sqlSession.update("Review.updateBoard", vo);
+	public int updateReview(ReviewVO vo) {
+		int result = sqlSession.update("Review.updateReview", vo);
 		return result;
 	}
 
@@ -45,13 +45,13 @@ public class ReviewDAO {
 		}
 	}
 
-	public ReviewVO getBoard(int seq) {
-		ReviewVO result = sqlSession.selectOne("Reivew.getBoard", seq);
+	public ReviewVO getReview(int seq) {
+		ReviewVO result = sqlSession.selectOne("Reivew.getReview", seq);
 		return result;
 	}
 
-	public List<ReviewVO> getBoardList() {
-		List<ReviewVO> result = sqlSession.selectList("Board.getBoardList");
+	public List<ReviewVO> getReviewList() {
+		List<ReviewVO> result = sqlSession.selectList("Review.getReviewList");
 		return result;
 	}
 }
