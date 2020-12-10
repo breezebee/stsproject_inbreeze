@@ -20,9 +20,10 @@
 		<div class="nav col-20">
 			<img class="logo" src="../img/logo.jpg" alt="logo">
 			<div id="navbuttons">
-				<a href="#" class="navbutton">Home</a> <a href="#" class="navbutton">Menu</a>
-				<a href="#" class="navbutton">Order</a> <a href="#"
-					class="navbutton">Review</a>
+				<a href="main" class="navbutton">Home</a> 
+				<a href="#" class="navbutton">Menu</a> 
+				<a href="#" class="navbutton">Order</a>
+				<a href="list" class="navbutton">Review</a>
 			</div>
 			<div class="contact">
 				<h3>Contact</h3>

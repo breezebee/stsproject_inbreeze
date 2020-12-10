@@ -1,47 +1,59 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="../css/review.css">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>free board</title>
-
-<script>
-	function delete_ok(id){
-		var a = confirm("정말로 삭제하겠습니까?");
-		if(a) location.href='deleteok/' + id;
-	}
-</script>
+<meta charset="UTF-8">
+<title>Add Form</title>
 </head>
 <body>
+	<div class="background">
+		<div class="bar col-5"></div>
+		<div class="blank col-5"></div>
+		<h2 class="secondtitle col-70">리뷰</h2>
+		<form action="addok col-5" method="post">
+			<table id="list" class="col-65" width="90%">
+				<tr>
+					<td class="td" id="short">ID</td>
+					<td class="td" id="long">Title</td>
+					<td class="td" id="short">Score</td>
+					<td class="td" id="short">Date</td>
+					<td class="td" id="short">Writer</td>
+				</tr>
+				<c:forEach items="${list}" var="u">
+					<tr>
+						<td class="td2">${u.seq}</td>
+						<td class="td2">${u.title}</td>
+						<td class="td2">Score</td>
+						<td class="td2">${u.score}</td>
+						<td class="td2">${u.regdate}</td>
+					</tr>
+				</c:forEach>
 
-
-<table id="list" width="90%">
-<tr>
-	<th>Id</th>
-	<th>Category</th>
-	<th>Title</th>
-	<th>Writer</th>
-	<th>Content</th>
-	<th>Regdate</th>
-	<th>Edit</th>
-	<th>Delete</th>
-</tr>
-<c:forEach items="${list}" var="u">
-	<tr>
-		<td>${u.seq}</td>
-		<td>${u.category}</td>
-		<td>${u.title}</td>
-		<td>${u.writer}</td>
-		<td>${u.content}</td>
-		<td>${u.regdate}</td> 
-		<td><a href="editform/${u.seq}">Edit</a></td>
-		<td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
-	</tr>
-</c:forEach>
-</table>
-
-<br/><a href="add">Add New Post</a>
+				<tr>
+					<td colspan="5">
+						<div id="addbutton">
+							<a href="add" id="link">리뷰쓰기</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<div class="nav col-20">
+			<img class="logo" src="../img/logo.jpg" alt="logo">
+			<div id="navbuttons">
+				<a href="main" class="navbutton">Home</a> 
+				<a href="#" class="navbutton">Menu</a> 
+				<a href="#" class="navbutton">Order</a>
+				<a href="list" class="navbutton">Review</a>
+			</div>
+			<div class="contact">
+				<h3>Contact</h3>
+				<p>010-1234-1234</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

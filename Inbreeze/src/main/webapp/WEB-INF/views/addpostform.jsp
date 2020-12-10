@@ -9,22 +9,23 @@
 </head>
 <body>
 	<div class="background">
+		<div class="bar col-5"></div>
 		<div class="blank col-5"></div>
-		<h2 class="secondtitle col-70">리뷰 쓰기</h2>
+		<h2 class="secondtitle col-65">리뷰 쓰기</h2>
 		<form action="addok" method="post">
-			<table class="reviewtable col-70">
+			<table class="reviewtable col-65">
 				<tbody>
 					<tr>
-						<td class="td"><h3>제목</h3></td>
-						<td><input type="text" name="title" /></td>
+						<td class="td"><h3>메뉴</h3></td>
+						<td><input type="text" name="menu" /></td>
 						<td class="td"><h3>글쓴이</h3></td>
 						<td><input type="text" name="writer" /></td>
 						<td class="td"><h3>점수</h3></td>
 						<td><input type="text" name="score" /></td>
 					</tr>
 					<tr>
-						<td class="td"><h3>메뉴</h3></td>
-						<td colspan="6"><input type="text" name="menu" /></td>
+						<td class="td"><h3>제목</h3></td>
+						<td colspan="6"><input type="text" name="title" /></td>
 					</tr>
 					<tr>
 						<td class="td" id="textbox"><h3>리뷰내용</h3></td>
@@ -32,7 +33,7 @@
 					</tr>
 					<tr>
 						<td colspan="6"><input class="button" id="a" type="submit"
-							value="리뷰쓰기" /> <input class="button" id="a" type="button"
+							value="작성" /> <input class="button" id="a" type="button"
 							value="취소" onclick="history.back()" /></td>
 					</tr>
 				</tbody>
@@ -41,9 +42,9 @@
 		<div class="nav col-20">
 			<img class="logo" src="../img/logo.jpg" alt="logo">
 			<div id="navbuttons">
-				<a href="#" class="navbutton">Home</a> <a href="#" class="navbutton">Menu</a>
-				<a href="#" class="navbutton">Order</a> <a href="#"
-					class="navbutton">Review</a>
+				<a href="main" class="navbutton">Home</a> <a href="#"
+					class="navbutton">Menu</a> <a href="#" class="navbutton">Order</a>
+				<a href="list" class="navbutton">Review</a>
 			</div>
 			<div class="contact">
 				<h3>Contact</h3>

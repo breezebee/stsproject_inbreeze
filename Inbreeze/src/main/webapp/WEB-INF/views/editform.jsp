@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<html>
 <link rel="stylesheet" href="../css/review.css">
 <head>
 <meta charset="UTF-8">
@@ -8,24 +9,25 @@
 </head>
 <body>
 	<div class="background">
+		<div class="bar col-5"></div>
 		<div class="blank col-5"></div>
-		<h2 class="secondtitle col-70">리뷰 수정하기</h2>
+		<h2 class="secondtitle col-65">리뷰 수정하기</h2>
 		<form action="/myapp/board/editok" method="post">
 			<input type="hidden" name="seq" value="${u.seq}" />
-			<table class="reviewtable col-70">
+			<table class="reviewtable col-65">
 				<tbody>
 					<tr>
-						<td class="td"><h3>제목</h3></td>
-						<td><input type="text" name="title" value="${u.title}" /></td>
+						<td class="td"><h3>메뉴</h3></td>
+						<td><input type="text" name="menu" value="${u.menu}" /></td>
 						<td class="td"><h3>글쓴이</h3></td>
 						<td><input type="text" name="writer" value="${u.writer}" /></td>
 						<td class="td"><h3>점수</h3></td>
 						<td><input type="text" name="score" value="${u.score}" /></td>
 					</tr>
 					<tr>
-						<td class="td"><h3>메뉴</h3></td>
-						<td colspan="6"><input type="text" name="menu"
-							value="${u.menu}" /></td>
+						<td class="td"><h3>제목</h3></td>
+						<td colspan="6"><input type="text" name="title"
+							value="${u.title}" /></td>
 					</tr>
 					<tr>
 						<td class="td" id="textbox"><h3>리뷰내용</h3></td>
@@ -42,9 +44,9 @@
 		<div class="nav col-20">
 			<img class="logo" src="../img/logo.jpg" alt="logo">
 			<div id="navbuttons">
-				<a href="#" class="navbutton">Home</a> <a href="#" class="navbutton">Menu</a>
-				<a href="#" class="navbutton">Order</a> <a href="#"
-					class="navbutton">Review</a>
+				<a href="main" class="navbutton">Home</a> <a href="#"
+					class="navbutton">Menu</a> <a href="#" class="navbutton">Order</a>
+				<a href="list" class="navbutton">Review</a>
 			</div>
 			<div class="contact">
 				<h3>Contact</h3>
