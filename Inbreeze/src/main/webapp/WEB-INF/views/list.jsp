@@ -19,15 +19,15 @@
 					<td class="td" id="short">ID</td>
 					<td class="td" id="long">Title</td>
 					<td class="td" id="short">Score</td>
-					<td class="td" id="short">Date</td>
 					<td class="td" id="short">Writer</td>
+					<td class="td" id="medium">Date</td>
 				</tr>
 				<c:forEach items="${list}" var="u">
 					<tr>
 						<td class="td2">${u.seq}</td>
-						<td class="td2">${u.title}</td>
-						<td class="td2">Score</td>
+						<td class="td2"><a href="view/${u.seq}">${u.title}</a></td>
 						<td class="td2">${u.score}</td>
+						<td class="td2">${u.writer}</td>
 						<td class="td2">${u.regdate}</td>
 					</tr>
 				</c:forEach>

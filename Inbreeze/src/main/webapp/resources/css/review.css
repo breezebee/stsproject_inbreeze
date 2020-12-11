@@ -239,13 +239,14 @@ textarea {
 #a {
 	float: right;
 }
-
 #short {
-	width: 100px;
+	width: 30px;
 }
-
+#medium {
+	width: 200px;
+}
 #long {
-	width: 500px;
+	width: 400px;
 }
 
 #addbutton {

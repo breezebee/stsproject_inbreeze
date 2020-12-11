@@ -14,6 +14,18 @@ public class ReviewController {
 	@Autowired
 	ReviewService reviewService;
 	
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
+	public String main() {
+		return "mainpage";
+	}
+	
+	@RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
+	public String viewPost(@PathVariable("id")int id, Model model) {
+		ReviewVO reviewVO = reviewService.getReview(id);
+		model.addAttribute("u", reviewVO);
+		return "view";
+	}
+	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String reviewlist(Model model) {
 		model.addAttribute("list", reviewService.getReviewList());

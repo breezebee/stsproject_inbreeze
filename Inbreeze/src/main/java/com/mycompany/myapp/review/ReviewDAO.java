@@ -37,7 +37,6 @@ public class ReviewDAO {
 			vo.setTitle(rs.getString("title"));
 			vo.setContent(rs.getString("content"));
 			vo.setWriter(rs.getString("writer"));
-			vo.setCategory(rs.getString("category"));
 			vo.setMenu(rs.getString("menu"));
 			vo.setScore(rs.getInt("score"));
 			vo.setRegdate(rs.getDate("regdate"));
