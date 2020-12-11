@@ -8,16 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value="/review")
+@RequestMapping(value="/inbreeze")
 public class ReviewController {
 	
 	@Autowired
 	ReviewService reviewService;
-	
-	@RequestMapping(value = "/main", method = RequestMethod.GET)
-	public String main() {
-		return "mainpage";
-	}
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String reviewlist(Model model) {
