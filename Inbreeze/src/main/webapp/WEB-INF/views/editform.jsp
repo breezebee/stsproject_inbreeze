@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="../css/review.css">
+<link rel="stylesheet" href="../../../css/review.css">
 <head>
 <meta charset="UTF-8">
 <title>Edit Form</title>
@@ -12,7 +12,7 @@
 		<div class="bar col-5"></div>
 		<div class="blank col-5"></div>
 		<h2 class="secondtitle col-65">리뷰 수정하기</h2>
-		<form action="/myapp/board/editok" method="post">
+		<form action="/myapp/inbreeze/view/editok" method="post">
 			<input type="hidden" name="seq" value="${u.seq}" />
 			<table class="reviewtable col-65">
 				<tbody>
@@ -42,7 +42,7 @@
 			</table>
 		</form>
 		<div class="nav col-20">
-			<img class="logo" src="../img/logo.jpg" alt="logo">
+			<img class="logo" src="../../../img/logo.jpg" alt="logo">
 			<div id="navbuttons">
 				<a href="main" class="navbutton">Home</a> <a href="#"
 					class="navbutton">Menu</a> <a href="#" class="navbutton">Order</a>

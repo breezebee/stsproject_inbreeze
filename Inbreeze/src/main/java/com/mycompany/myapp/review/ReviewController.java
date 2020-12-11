@@ -46,7 +46,7 @@ public class ReviewController {
 		return "redirect:list";
 	}
 	
-	@RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/view/editform/{id}", method = RequestMethod.GET)
 	public String editPost(@PathVariable("id")int id, Model model) {
 		ReviewVO reviewVO = reviewService.getReview(id);
 		model.addAttribute("u", reviewVO);
