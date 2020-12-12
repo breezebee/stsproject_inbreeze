@@ -3,7 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	 <typeAliases>
-		<typeAlias alias="review" type="com.mycompany.myapp.review.ReviewVO" />
-	</typeAliases> 
+	<typeAliases>
+		<typeAlias alias="review"
+			type="com.mycompany.myapp.review.ReviewVO" />
+		<typeAlias alias="user"
+			type="com.mycompany.myapp.user.UserVO" />
+	</typeAliases>
 </configuration>

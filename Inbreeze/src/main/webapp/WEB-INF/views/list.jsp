@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../css/review.css">
 <head>
 <meta charset="UTF-8">
-<title>Add Form</title>
+<title>Review list</title>
 </head>
 <body>
 	<div class="background">

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="../../css/review.css">
@@ -21,9 +22,6 @@
 		<h2 class="secondtitle col-65">제목: ${u.title}</h2>
 		<table class="reviewtable col-65">
 			<tbody>
-				<!-- <tr><th id="pic" rowspan="12"><c:if test="${vo.getPhoto() ne ''}"><br /> 
-                    <img src="${pageContext.request.contextPath }/upload/${vo.getPhoto()}" class="photo"></c:if></th></tr>
-                     -->
 				<tr>
 					<td class="td">점수</td>
 					<td>${u.score}</td>
