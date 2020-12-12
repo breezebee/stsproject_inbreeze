@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-	margin-top: 280px;
+	margin-top: 250px;
 	color: white;
 	font-family: cursive;
 	font-size: 50px;
@@ -291,5 +291,15 @@ textarea {
 	background-color: rgb(226, 204, 174);
 	border-style: none;
 	margin: 5px;
+	color: rgb(105, 84, 66);
+}
+
+#colorchange {
+	background-color: rgb(248, 240, 229);
+}
+
+#colorchangebox {
+	background-color: rgb(248, 240, 229);
+	padding: 50px;
 	color: rgb(105, 84, 66);
 }

@@ -23,20 +23,22 @@
 		<table class="reviewtable col-65">
 			<tbody>
 				<tr>
+					<td class="td">메뉴</td>
+					<td id="colorchange">${u.menu}</td>
 					<td class="td">점수</td>
-					<td>${u.score}</td>
-				<tr>
-				<tr>
+					<td id="colorchange">${u.score}</td>
 					<td class="td">글쓴이</td>
-					<td>${u.writer}</td>
+					<td id="colorchange">${u.writer}</td>
+				</tr>
 				<tr>
+					<td class="td" id="textbox"><h3>리뷰내용</h3></td>
+					<td colspan="6" id="colorchangebox">${u.content}</td>
+				</tr>
 				<tr>
-					<td class="td">리뷰내용</td>
-					<td>${u.content}</td>
-				<tr>
-
-					<td><a href="editform/${u.seq}">Edit</a></td>
-					<td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
+					<td colspan="6"><a id="b" class="button"
+						href="editform/${u.seq}">수정</a> <a class="button"
+						href="javascript:delete_ok('${u.seq}')">삭제</a></td>
+				</tr>
 			</tbody>
 		</table>
 		<div class="nav col-20">

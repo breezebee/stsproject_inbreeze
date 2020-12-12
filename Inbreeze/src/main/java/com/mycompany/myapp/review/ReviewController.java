@@ -53,16 +53,16 @@ public class ReviewController {
 		return "editform";
 	}
 
-	@RequestMapping(value = "/editok", method = RequestMethod.POST)
+	@RequestMapping(value = "/view/editok", method = RequestMethod.POST)
 	public String editPostOK(ReviewVO vo) {
 		if(reviewService.updateReview(vo) == 0)
 			System.out.println("데이터 수정 실패");
 		else
 			System.out.println("데이터 수정 성공!!!");
-		return "redirect:list";
+		return "redirect:../list";
 	}
 	
-	@RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/view/deleteok/{id}", method = RequestMethod.GET)
 	public String deletePostOK(@PathVariable("id") int id) {
 		if(reviewService.deleteReview(id) == 0)
 			System.out.println("데이터 삭제 실패");

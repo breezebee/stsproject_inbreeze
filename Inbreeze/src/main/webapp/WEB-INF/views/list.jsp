@@ -35,7 +35,7 @@
 				</c:forEach>
 
 				<tr>
-					<td colspan="5">
+					<td colspan="6">
 						<div id="addbutton">
 							<a href="add" id="link">리뷰쓰기</a>
 						</div>
