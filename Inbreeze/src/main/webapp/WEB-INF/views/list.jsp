@@ -16,18 +16,20 @@
 		<form action="addok" method="post">
 			<table id="list" class="col-65">
 				<tr>
-					<td class="td" id="short">ID</td>
 					<td class="td" id="long">Title</td>
-					<td class="td" id="short">Score</td>
 					<td class="td" id="short">Writer</td>
+					<td class="td" id="short">menu</td>
+					<td class="td" id="short">Score</td>
+					<td class="td" id="medium">Content</td>
 					<td class="td" id="medium">Date</td>
 				</tr>
 				<c:forEach items="${list}" var="u">
 					<tr>
-						<td class="td2">${u.seq}</td>
 						<td class="td2"><a id="link" href="view/${u.seq}">${u.title}</a></td>
-						<td class="td2">${u.score}</td>
 						<td class="td2">${u.writer}</td>
+						<td class="td2">${u.menu}</td>
+						<td class="td2">${u.score}</td>
+						<td class="td2">${u.content}</td>
 						<td class="td2">${u.regdate}</td>
 					</tr>
 				</c:forEach>
